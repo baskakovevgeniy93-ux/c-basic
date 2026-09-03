@@ -1,0 +1,32 @@
+# Compiled files
+*.o
+*.exe
+*.out
+*.a
+
+# Binary files (executables)
+main
+ifor_about_me
+info2
+week3/average_array
+week3/calculator_repeat
+week3/checking_letter
+week3/count_evenarray
+week3/difine_symbol
+week3/first_function
+week3/function_massiv
+week3/massiv_first
+week3/menu
+week3/nax_massiv
+week3/password_dowhile
+week3/project_wee3_final
+week3/sum_masssiv
+week3/sumfunction_massiv
+week3/switch
+week3/symbol_char
+
+# MacOS
+.DS_Store
+
+# VSCode
+.vscode/
