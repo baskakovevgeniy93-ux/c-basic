@@ -25,8 +25,7 @@ int count_digits(char text[]){
 return count;
 }
 
-int replace_spaces(char text[]){
-    int count = 0;
+void replace_spaces(char text[]){
     int i =0;
     while(text[i]!='\0'){
         if(text[i] == ' '){
@@ -34,7 +33,6 @@ int replace_spaces(char text[]){
         }
         i++;
     }
-return 0;
 }
 
 void reverse_string(char text[]){
@@ -64,9 +62,11 @@ int main(void){
     printf("Digits: %d\n",count_digits(text));
 
     replace_spaces(text);
-    reverse_string(text);
+    
 
     printf("Modified text: %s\n", text);
+
+    reverse_string(text);
     printf("%s\n", text);
     
     return 0;
