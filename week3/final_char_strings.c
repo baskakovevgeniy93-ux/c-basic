@@ -37,6 +37,20 @@ int replace_spaces(char text[]){
 return 0;
 }
 
+void reverse_string(char text[]){
+    int left = 0;
+    int right = strlen(text)-1;
+    char temp;
+
+    while(left<right){
+         temp = text[left];
+         text[left] = text[right];
+         text[right] = temp;
+         left++;
+         right--;
+    }
+}
+
 int main(void){
 
     char text[100];
@@ -50,8 +64,10 @@ int main(void){
     printf("Digits: %d\n",count_digits(text));
 
     replace_spaces(text);
+    reverse_string(text);
 
     printf("Modified text: %s\n", text);
+    printf("%s\n", text);
     
     return 0;
 }
